@@ -5,10 +5,10 @@
   <style> .results-carousel .item img { width: 512px; height: 512px; } </style>
   <meta charset="utf-8">
   <meta name="description"
-        content="Portrait3D: 3D Head Generation from Single In-the-wild Portrait Image">
+        content="ID-Sculpt: ID-aware 3D Head Generation from Single In-the-wild Portrait Image">
   <meta name="keywords" content="Video Generation, Camera Motion transfer, Camera-Object Motion, Disentanglement">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portrait3D: 3D Head Generation from Single In-the-wild Portrait Image</title>
+  <title>ID-Sculpt: ID-aware 3D Head Generation from Single In-the-wild Portrait Image</title>
 
   <style>
     .custom-video-size {
@@ -61,7 +61,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Portrait3D: 3D Head Generation from Single In-the-wild Portrait Image</h1>
+            <h1 class="title is-1 publication-title">ID-Sculpt: ID-aware 3D Head Generation from Single In-the-wild Portrait Image</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a>Jinkun Hao</a><sup>1</sup>,</span>
@@ -115,7 +115,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://jinkun-hao.github.io/Portrait3D/"
+                  <a href="https://jinkun-hao.github.io/ID-Sculpt/"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -134,7 +134,7 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/jinkun-hao/Portrait3D"
+                  <a href="https://github.com/jinkun-hao/ID-Sculpt"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fab fa-github"></i>
@@ -193,14 +193,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            While recent works have achieved great success on one-shot 3D common object generation, high quality and fidelity 3D head generation from a single image remains a great challenge.
-            Previous text-based methods for generating 3D heads were limited by text descriptions and image-based methods struggled to produce high-quality head geometry.
-            To handle this challenging problem, we propose a novel framework, Portrait3D, to generate high-quality 3D heads while preserving their identities. Our work incorporates the identity information of the portrait image into three parts: 1) geometry initialization, 2) geometry sculpting, and 3) texture generation stages. 
-            Given a reference portrait image, we first align the identity features with text features to realize ID-aware guidance enhancement, which contains the control signals representing the face information. 
-            We then use the canny map, ID features of portrait image, and a pre-trained text-to-normal/depth diffusion model to generate ID-aware geometry supervision, and 3D-GAN inversion is employed to generate ID-aware geometry initialization. 
-            Furthermore, with the ability to inject identity information into 3D head generation, we use ID-aware guidance to calculate ID-aware Score Distillation (ISD) for geometry sculpting. 
-            For texture generation, we adopt the ID Consistent Texture Inpainting and Refinement which progressively expands the view for texture inpainting to obtain an initialization UV texture map. 
-            We then use the id-aware guidance to provide image-level supervision for noisy multi-view images to obtain a refined texture map. Extensive experiments demonstrate that we can generate high-quality 3D heads with accurate geometry and texture from single in-the-wild portrait image.
+            While recent works have achieved great success on one-shot 3D common object generation, high quality and fidelity 3D head generation from a single image remains a great challenge. Previous text-based methods for generating 3D heads were limited by text descriptions and image-based methods struggled to produce high-quality head geometry. To handle this challenging problem, we propose a novel framework, ID-Sculpt, to generate high-quality 3D heads while preserving their identities. Our work incorporates the identity information of the portrait image into three parts: 1) geometry initialization, 2) geometry sculpting, and 3) texture generation stages. Given a reference portrait image, we first align the identity features with text features to realize ID-aware guidance enhancement, which contains the control signals representing the face information. We then use the canny map, ID features of the portrait image, and a pre-trained text-to-normal/depth diffusion model to generate ID-aware geometry supervision and 3D-GAN inversion is employed to generate ID-aware geometry initialization. Furthermore, with the ability to inject identity information into 3D head generation, we use ID-aware guidance to calculate ID-aware Score Distillation (ISD) for geometry sculpting. For texture generation, we adopt the ID Consistent Texture Inpainting and Refinement which progressively expands the view for texture inpainting to obtain an initialization UV texture map. We then use the id-aware guidance to provide image-level supervision for noisy multi-view images to obtain a refined texture map. Extensive experiments demonstrate that we can generate high-quality 3D heads with accurate geometry and texture from a single in-the-wild portrait image.
         </div>
       </div>
     </div>
@@ -219,7 +212,7 @@
         </div>
         <div class="content has-text-justified">
           <p>
-            Given a single in-the-wild portrait image, Portrait3D uses Identity-aware Head Guidance and Initialization to integrate identity information into the Geometry Sculpting stage. 
+            Given a single in-the-wild portrait image, ID-Sculpt uses Identity-aware Head Guidance and Initialization to integrate identity information into the Geometry Sculpting stage. 
             In the texture generation stage, ID Consistent Texture Inpainting and Refinement is applied to generate a high-quality head texture, where we first use the inpainting method to generate a rough texture and then use image-level ID-aware supervision for texture refinement. 
             With these methods, we can generate high-quality 3D head models with consistent identities from a single in-the-wild face image.
         </div>
@@ -237,7 +230,7 @@
       <h2 class="title is-3">3D Head Generation from In-the-Wild Portrait Image</h2>
     </div>
     <div class="content has-text-justified">
-      Given a single in-the-wild portrait image, Portrait3D can generate identity-consistant 3D head. Our results exhibit high-quality geometry and photorealistic textures.
+      Given a single in-the-wild portrait image, ID-Sculpt can generate identity-consistant 3D head. Our results exhibit high-quality geometry and photorealistic textures.
     </div>
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">

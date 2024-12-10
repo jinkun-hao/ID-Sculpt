@@ -1,8 +1,8 @@
-# Portrait3D: 3D Head Generation from Single In-the-wild Portrait Image
+# ID-Sculpt: ID-aware 3D Head Generation from Single In-the-wild Portrait Image
 
-### [Project Page](https://jinkun-hao.github.io/Portrait3D/) | [Paper](https://arxiv.org/abs/2406.16710)
+### [Project Page](https://jinkun-hao.github.io/ID-Sculpt/) | [Paper](https://arxiv.org/abs/2406.16710)
 
-Official implementation of Portrait3D, a method for generating high-quality and realistic 3D Head from Single In-the-wild Portrait Image.
+Official implementation of ID-Sculpt, a method for generating high-quality and realistic 3D Head from Single In-the-wild Portrait Image.
 
 
 [Jinkun Hao](https://github.com/jinkun-hao/Portrait3D)<sup>1</sup>,
