@@ -13,6 +13,7 @@ Official implementation of ID-Sculpt, a method for generating high-quality and r
 [Moran Li](https://github.com/jinkun-hao/Portrait3D)<sup>2</sup>,
 [Weijian Cao](https://github.com/jinkun-hao/Portrait3D)<sup>2</sup><br>
 [Yating Wang](https://github.com/jinkun-hao/Portrait3D)<sup>1</sup>,
+[Chengjie Wang](https://github.com/jinkun-hao/Portrait3D)<sup>2</sup>,
 [Lizhuang Ma](https://github.com/jinkun-hao/Portrait3D)<sup>1</sup><br>
 <sup>1</sup>Shanghai Jiao Tong University, <sup>2</sup>Youtu Lab, Tencent
 
