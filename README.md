@@ -1,6 +1,6 @@
 # [AAAI 2025] ID-Sculpt: ID-aware 3D Head Generation from Single In-the-wild Portrait Image
 
-### [Project Page](https://jinkun-hao.github.io/ID-Sculpt/) | [Paper](https://arxiv.org/abs/2406.16710)
+### [Project Page](https://jinkun-hao.github.io/IDSculpt/) | [Paper](https://arxiv.org/abs/2406.16710)
 
 Official implementation of ID-Sculpt, a method for generating high-quality and realistic 3D Head from Single In-the-wild Portrait Image.
 
